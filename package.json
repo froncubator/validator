@@ -1,6 +1,6 @@
 {
   "name": "froncubator-validator-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "data validator",
   "homepage": "https://github.com/froncubator/validator",
   "main": "validator.min.js",
