@@ -1,0 +1,21 @@
+{
+  "name": "froncubator-validator-js",
+  "version": "0.0.1",
+  "description": "data validator",
+  "homepage": "https://github.com/froncubator/validator",
+  "main": "validator.min.js",
+  "files": [
+    "README.md",
+    "LICENCE",
+    "validator.js",
+    "validator.min.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "froncubator dev team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/froncubator/validator/issues"
+  }
+}
