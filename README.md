@@ -5,7 +5,7 @@ A simple JavaScript library for validating data
 Install the library with npm install froncubator-validator
 
 ```javascript
-let validator = require('froncubator-validator');
+let validator = require('froncubator-validator-js');
 
 validator.isInt(123); //=> true
 ```
