@@ -1,19 +1,21 @@
 {
   "name": "froncubator-validator-js",
-  "version": "0.0.2",
-  "description": "data validator",
+  "version": "1.0.2",
+  "description": "Simple validator by Froncubator Pro",
   "homepage": "https://github.com/froncubator/validator",
-  "main": "validator.min.js",
+  "main": "validator.js",
   "files": [
     "README.md",
     "LICENCE",
-    "validator.js",
-    "validator.min.js"
+    "validator.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "froncubator dev team",
+  "keywords": [
+      "validator", "validation", "validate", "sanitization", "sanitize", "assert", "no dependencies"
+  ],
+  "author": "Froncubator Pro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/froncubator/validator/issues"

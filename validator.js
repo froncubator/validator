@@ -1,4 +1,14 @@
+function isExist(value) {
+    if (value == undefined || value == null || value+'' == 'NaN') {
+        return false
+    } else {
+        return true
+    }
+}
+
 function isEmail(value) {
+    if (!isExist(value)) return false
+
     if (typeof value == 'string' && value.indexOf('@') != -1 && value.indexOf('.') != -1 && value.length >= 5) {
         return true
     } else {
@@ -6,7 +16,9 @@ function isEmail(value) {
     }
 }
 
-function isString(value, min, max) {
+function isStr(value, min, max) {
+    if (!isExist(value)) return false
+
     if (typeof value == 'string') {
         if (min != undefined) {
             if (value.trim().length < min)
@@ -23,36 +35,49 @@ function isString(value, min, max) {
     }
 }
 
-function isBool(value) {
-    if (typeof value == 'boolean' || value === 1 || value === 0) {
+function isInt(value, min, max) {
+    if (Number.isInteger(value)) {
+        if (min != undefined) {
+            if (value < min)
+                return false
+        }
+
+        if (max != undefined) {
+            if (value > max) {
+                return false
+            }
+        }
         return true
     } else {
         return false
     }
 }
 
-function isInt(value) {
-    if (Number.isInteger(value)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function isArray(value) {
+function isArr(value, min, max) {
     if (Array.isArray(value)) {
-        return true;
+        if (min != undefined) {
+            if (value.length < min) {
+                return false
+            }
+        }
+
+        if (max != undefined) {
+            if (value.length > max) {
+                return false
+            }
+        }
+        return true
     } else {
-        return false;
+        return false
     }
 }
 
-var froncubatorValidator = {
-    isEmail: isEmail,
-    isString: isString,
-    isBool: isBool,
-    isInt: isInt,
-    isArray: isArray
+const froncubatorValidator = {
+    isExist,
+    isEmail,
+    isStr,
+    isInt,
+    isArr
 }
 
 exports.default = froncubatorValidator;
