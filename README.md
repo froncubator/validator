@@ -13,15 +13,15 @@ validator.isInt(10.5); //=> false
 validator.isInt(undefined); //=> false
 validator.isInt(123, 5, 10); //=> false
 
-validator.isString('Froncubator', 0, 100) //=> true
-validator.isString('Some String', null, 100) //=> true
-validator.isString('Next String', 100) //=> false
-validator.isString(undefined) //=> false
+validator.isStr('Froncubator', 0, 100) //=> true
+validator.isStr('Some String', null, 100) //=> true
+validator.isStr('Next String', 100) //=> false
+validator.isStr(undefined) //=> false
 
-validator.isArray([1,2,3]) //=> true
-validator.isArray([1,2,3], 1, 3) //=> true
-validator.isArray([1,2,3], 5, 10) //=> false
-validator.isArray(null) //=> false
+validator.isArr([1,2,3]) //=> true
+validator.isArr([1,2,3], 1, 3) //=> true
+validator.isArr([1,2,3], 5, 10) //=> false
+validator.isArr(null) //=> false
 
 validator.isEmail('some@email.com') //=> true
 validator.isEmail('x@x.x') //=> true
@@ -38,9 +38,9 @@ validator.isExist(NaN) //=> false
 |Validator                                                         |Description                                                                   |
 |------------------------------------|------------------------------------------------------------------------------|
 |__isEmail__(_value_)                |Check is value is email and return true or false.|
-|__isString__(_value_, _min_, _max_) |Check is value is string and return true or false. You can check count of characters in the string with _min_ or _max_. (_min_, _max_) = not required.|
+|__isStr__(_value_, _min_, _max_) |Check is value is string and return true or false. You can check count of characters in the string with _min_ or _max_. (_min_, _max_) = not required.|
 |__isInt__(_value_, _min_, _max_)    |Check is value is integer and return true or false. You can check number with _min_ or _max_. (_min_, _max_) = not required.|
-|__isArray__(_value_, _min_, _max_)  |Check is value is array and return true or false. You can check array length with _min_ or _max_. (_min_, _max_) = not required.|
+|__isArr__(_value_, _min_, _max_)  |Check is value is array and return true or false. You can check array length with _min_ or _max_. (_min_, _max_) = not required.|
 |__isExist__(_value_)                |Check is value exist (undefined, null, NaN).|
 
 ___

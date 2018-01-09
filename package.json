@@ -1,6 +1,6 @@
 {
   "name": "froncubator-validator-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple validator by Froncubator Pro",
   "homepage": "https://github.com/froncubator/validator",
   "main": "validator.js",
